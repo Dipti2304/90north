@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        .shrink-90 { transform: scale(0.9); }
+        .shrink-80 { transform: scale(0.8); }
+        .shrink-75 { transform: scale(0.75); }
+        .shrink-50 { transform: scale(0.5); }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="fixed top-0 left-0 w-full bg-blue-600 text-white p-4 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-bold">My Website</div>
+            <div class="space-x-4">
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">About</a>
+                <a href="#" class="hover:underline">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto flex flex-col md:flex-row pt-20">
+        <div id="left-menu" class="w-full md:w-1/4 bg-white p-4 shadow-lg">
+            <button id="toggle-menu" class="mb-4 p-2 bg-blue-600 text-white rounded">Toggle Menu</button>
+            <ul>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 1</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 2</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 3</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 4</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 5</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 6</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 7</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 8</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 9</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 10</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 11</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 12</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 13</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 14</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Menu Item 15</a></li>
+            </ul>
+        </div>
+
+        <div class="w-full md:w-1/2 bg-white p-4 shadow-lg mx-4">
+            <h1 class="text-2xl font-bold mb-4">Main Content Area</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec magna fermentum, a facilisis nulla tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt. Donec vel libero nec nulla facilisis tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt.</p>
+            <h2 class="text-xl font-bold mt-6 mb-4">Subsection 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec magna fermentum, a facilisis nulla tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt. Donec vel libero nec nulla facilisis tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt.</p>
+            <h2 class="text-xl font-bold mt-6 mb-4">Subsection 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec magna fermentum, a facilisis nulla tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt. Donec vel libero nec nulla facilisis tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt.</p>
+            <h2 class="text-xl font-bold mt-6 mb-4">Subsection 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec magna fermentum, a facilisis nulla tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt. Donec vel libero nec nulla facilisis tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt.</p>
+            <h2 class="text-xl font-bold mt-6 mb-4">Subsection 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec magna fermentum, a facilisis nulla tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt. Donec vel libero nec nulla facilisis tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt.</p>
+            <h2 class="text-xl font-bold mt-6 mb-4">Subsection 5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec magna fermentum, a facilisis nulla tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt. Donec vel libero nec nulla facilisis tincidunt. Integer nec odio nec urna fermentum tincidunt. Sed sit amet libero nec urna vehicula tincidunt.</p>
+        </div>
+
+        <div class="w-full md:w-1/4 bg-white p-4 shadow-lg">
+            <h2 class="text-xl font-bold mb-4">Right Side Panel</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec magna fermentum, a facilisis nulla tincidunt.</p>
+            <h3 class="text-lg font-bold mt-6 mb-4">Related Links</h3>
+            <ul>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 1</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 2</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 3</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 4</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 5</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 6</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 7</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 8</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 9</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Related Link 10</a></li>
+            </ul>
+            <h3 class="text-lg font-bold mt-6 mb-4">Recent News</h3>
+            <ul>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 1</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 2</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 3</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 4</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 5</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 6</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 7</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 8</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 9</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">News Item 10</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bg-blue-600 text-white p-4 mt-4">
+        <div class="container mx-auto text-center">
+            &copy; 2023 My Website. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('toggle-menu').addEventListener('click', function() {
+            const leftMenu = document.getElementById('left-menu');
+            leftMenu.classList.toggle('hidden');
+            const toggleButton = document.getElementById('toggle-menu');
+            if (leftMenu.classList.contains('hidden')) {
+                toggleButton.textContent = 'Open Menu';
+            } else {
+                toggleButton.textContent = 'Close Menu';
+            }
+        });
+
+        function adjustScale() {
+            const width = window.innerWidth;
+            const body = document.body;
+
+            body.classList.remove('shrink-90', 'shrink-80', 'shrink-75', 'shrink-50');
+
+            if (width >= 992 && width <= 1600) {
+                body.classList.add('shrink-90');
+            } else if (width >= 700 && width <= 767) {
+                body.classList.add('shrink-80');
+            } else if (width >= 600 && width <= 700) {
+                body.classList.add('shrink-75');
+            } else if (width <= 600) {
+                body.classList.add('shrink-50');
+            }
+        }
+
+        window.addEventListener('resize', adjustScale);
+        window.addEventListener('load', adjustScale);
+    </script>
+</body>
+</html>
